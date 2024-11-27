@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(249, 249, 249, 0.9);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+#logo{
+  font-size: 36px;
+  font-weight: 550;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+
+#navbar.scrolled {
+  background-color: rgba(89, 210, 243, 0.934); /* Change background color when scrolled */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span {
+  color: #eb1b1b;
+}
+
+.navbar-toggler span {
+  color: #2e4cc7;
+  font-size: 20px;
+}
+
+.navbar-nav{
+  margin-left: 20px;
+}
+
+.nav-item .nav-link{
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  background-color: #fefffeba;
+  color: rgb(48, 53, 202);
+}
+
+.navbar{
+  background: crimson; font-family: calibri; padding-right: 15px;padding-left: 15px;
+}
+.navdiv{
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+  font-size: 35px; font-weight: 600; color: white;
+}
+li{
+  list-style: none; display: inline-block;
+}
+li a{
+  color: rgb(4, 4, 4); font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+li a:hover{
+  color: rgb(227, 19, 36);
+}
+
+form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+form .btn {
+  background-color: #2e4cc7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+form .btn:hover {
+  background-color: #ea2121;
+}
+/* Hero Section */
+.home {
+  width: 100%;
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), 
+      url('UI\ Developer.gif');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home .content h5 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+}
+
+.home .content p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 20px;
+  font: small-caps bold 24px/1 sans-serif;
+}
+
+.home .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home .content a:hover {
+  background-color: #eb1b1b;
+  color: rgb(255, 255, 255);
+}
+
+/* Section Styling */
+main section {
+  padding: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Offer Letter Section */
+#letter {
+  padding: 50px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#letter h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #333;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#letter h1 span {
+  color: #2e4cc7;
+}
+
+
+.letter {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.letter p {
+  font-family: serif;
+}
+
+.card img {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#footer h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#footer h1 span {
+  color: #243dcce4;
+}
+
+#footer p {
+  color: #666;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+#footer .social-links {
+  margin: 20px 0;
+}
+
+#footer .social-links a {
+  margin: 0 10px;
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#footer .social-links a:hover {
+  background-color: #ed0e24e4;
+}
+
+#footer .credit {
+  margin-top: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+#footer .credit span {
+  color: #1cc12fe4;
+  font-weight: bold;
+}
